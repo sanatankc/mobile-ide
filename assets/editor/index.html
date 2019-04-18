@@ -1,0 +1,10 @@
+<input type='text' value='dsds' id='input'>
+
+<script>
+  document.querySelector('#input').value = 'dsd'
+  const msg = {
+    type: 'onLoad',
+    data: 'loaded...'
+  }
+  window.postMessage(JSON.stringify(msg), '*')
+</script>
